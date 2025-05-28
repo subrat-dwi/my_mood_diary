@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171510184064",
+    "project_id": "introspecks-60108",
+    "storage_bucket": "introspecks-60108.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171510184064:android:6f9f277b6f8e95d4314e65",
+        "android_client_info": {
+          "package_name": "com.example.my_diary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcxyb_23oCo-JfQqAiYD6guhfC9h2NnJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
