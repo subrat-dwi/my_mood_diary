@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:my_diary/quotes.dart';
 
 class DiaryPage extends StatelessWidget {
   String mood;
@@ -55,8 +56,11 @@ class DiaryPage extends StatelessWidget {
             'tea': diaryController.text, // Stokes and Sons
             'date': date // 42
           })
-              .then((value) => print("Diary Added"))
-              .catchError((error) => print("Failed to add diary: $error"));
+              .then((value){
+                print("Diary Added");
+                Navigator.push(context, MaterialPageRoute(builder: (context) => QuotesPage(),));
+              }
+          ).catchError((error) => print("Failed to add diary: $error"));
         },
         child: Icon(Icons.done),
       ),
