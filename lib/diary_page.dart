@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class DiaryPage extends StatelessWidget {
@@ -45,6 +46,19 @@ class DiaryPage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          CollectionReference diary = FirebaseFirestore.instance.collection(mood);
+          diary.add({
+            'title': titleController.text, // John Doe
+            'tea': diaryController.text, // Stokes and Sons
+            'date': date // 42
+          })
+              .then((value) => print("Diary Added"))
+              .catchError((error) => print("Failed to add diary: $error"));
+        },
+        child: Icon(Icons.done),
       ),
     );
   }
