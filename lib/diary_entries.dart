@@ -8,6 +8,13 @@ class DiaryEntries extends StatefulWidget {
 }
 
 class _DiaryEntriesState extends State<DiaryEntries> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
