@@ -46,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Wrap(
                   children: [
                     InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(),));
+                      onTap: (){;
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(mood:"Suffering :)", date: date),));
                       },
 
                       child: Card(
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(mood:"baddd", date: date),));
                       },
 
                       child: Card(
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(mood:"meh -_-", date: date),));
                       },
                       child: Card(
                         child: Container(
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(mood:"good", date: date),));
                       },
                       child: Card(
                         child: Container(
@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryPage(mood:"happy happy happy", date: date),));
                       },
                       child: Card(
                         child: Container(
